@@ -11,6 +11,7 @@ const activeInfo = computed(() => {
 });
 
 const priceRoute = computed(() => {
+  if (!distance.value || !duration.value) return
 
   const per_distante = distance.value * 34;
   const per_duration = duration.value * 0.5;
